@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main{
+    background-image: linear-gradient( 115deg
+, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://cdn.freecodecamp.org/testable-projects-fcc/images/survey-form-background.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    font-family: 'Poppins', sans-serif;    
+    /* display: flex; */
+    /* flex-direction:column; */
+}
+#survey-form{
+    background-color:rgba(39,39,70,0.8);
+    color: white;
+    font-size:1.2rem;
+    padding: 30px;
+    margin: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction:column;
+}
+#title, #description{
+    color: white;
+    text-align:center;
+}
+#name, #email, #number, #submit, #dropdown, #dropdown2{
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    padding:10px;
+    font-size:1.2rem;
+}
+#dropdown, #dropdown2{
+    color: rgb(117,117,117);
+}
+#submit{
+    background-color:#37AF65;
+    color: white;
+    font-size:1.2rem;
+}
+#name-label, #email-label, #number-label{
+    padding-bottom: 5px;
+}
+#radio-group{
+    flex-direction: column;
+}
+::-webkit-input-placeholder{
+    font-size:1rem;
+    font-family: "Poppins","sans-serif";
+}
+input[type=checkbox]{
+    width: 18px;
+    height:18px;
+}
+#text-area{
+    padding: 5px;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 1rem;
+    color: rgb(117,117,117);
+    font-family:"Poppins", "sans-serif";
+    border-radius: 2px;
+}
+#just-title{
+    background: linear-gradient(to right,#43C6AC 0%, #F8FFAE 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+@media only screen and (min-device-width: 768px){
+    #survey-form{
+        max-width: 40%;
+    }
+}

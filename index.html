@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Survey Form | TechnoLearner</title>
+  </head>
+  <body>
+    <div id="main">
+      <br /><br />
+      <h1 id="title"> <span id="just-title">TechnoLearner</span> Survey Form</h1>
+      <p id="description">
+        Thank you for taking the time to help us improve the platform
+      </p>
+      <br /><br />
+      <form id="survey-form">
+        <label for="name" id="name-label">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+        <br />
+        <label for="email" id="email-label">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your Email"
+          required
+        />
+        <br />
+        <label for="number" id="number-label"
+          >Age <small>(optional)</small></label
+        >
+        <input
+          type="number"
+          name="number"
+          id="number"
+          min="1"
+          max="120"
+          placeholder="Age"
+        />
+        <br />
+        <label for="dropdown"
+          >Which option best describes your current role?
+        </label>
+        <select name="dropdown" id="dropdown">
+          <option class="options" value="select-current-role">
+            Select current role
+          </option>
+          <option value="student">Student</option>
+          <option value="full-time-job">Full Time Job</option>
+          <option value="full-time-learner">Full Time Learner</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+        <br />
+        <div id="radio-group">
+          <label>Would you recommend technoLearner to a friend? </label> <br />
+          <input type="radio" id="definitely" name="choice" value="1" />
+          <label for="definitely">Definitely</label><br />
+          <input type="radio" id="maybe" name="choice" value="2" />
+          <label for="maybe">Maybe</label><br />
+          <input type="radio" id="not-sure" name="choice" value="3" />
+          <label for="not-sure">Not sure</label><br />
+        </div>
+        <br />
+        <label for="dropdown2"
+          >What is your favorite feature of technoLearner?
+        </label>
+        <select name="dropdown2" id="dropdown2">
+          <option value="select-an-option" selected>Select an option</option>
+          <option value="challenges">Challenges</option>
+          <option value="projects">Projects</option>
+          <option value="community">Community</option>
+          <option value="open-source">Open Source</option>
+        </select>
+        <br />
+        <label
+          >What would you like to see improved? (Check all that apply)</label
+        >
+        <div class="checkbox-group">
+          <input
+            type="checkbox"
+            name="front-end-projects"
+            id="chc1"
+            value="front-end-projects"
+          />
+          <label for="chc1">Front-end Projects</label><br />
+
+          <input
+            type="checkbox"
+            name="back-end-projects"
+            id="chc2"
+            value="back-end-projects"
+          />
+          <label for="chc2">Back-end Projects</label><br />
+
+          <input
+            type="checkbox"
+            name="data-visualization"
+            id="chc3"
+            value="data-visualization"
+          />
+          <label for="chc3">Data Visualization</label><br />
+
+          <input
+            type="checkbox"
+            name="challenges"
+            id="chc4"
+            value="challenges"
+          />
+          <label for="chc4">Challenges</label><br />
+
+          <input
+            type="checkbox"
+            name="open-source-community"
+            id="chc5"
+            value="open-source-community"
+          />
+          <label for="chc5">Open Source Community</label> <br />
+
+          <input
+            type="checkbox"
+            name="gitter-help-rooms"
+            id="chc6"
+            value="gitter-help-rooms"
+          />
+          <label for="chc6">Gitter help rooms</label> <br />
+
+          <input type="checkbox" name="videos" id="chc7" value="videos" />
+          <label for="chc7">Videos</label><br />
+
+          <input
+            type="checkbox"
+            name="city-meetups"
+            id="chc8"
+            value="city-meetups"
+          />
+          <label for="chc8">City Meetups</label> <br />
+
+          <input type="checkbox" name="wiki" id="chc9" value="wiki" />
+          <label for="chc9">Wiki</label> <br />
+
+          <input type="checkbox" name="forum" id="chc10" value="forum" />
+          <label for="chc10">Forum</label> <br />
+
+          <input
+            type="checkbox"
+            name="additional-courses"
+            id="chc11"
+            value="additional-courses"
+          />
+          <label for="chc11">Additional Courses</label> <br />
+        </div>
+        <br />
+        <label for="text-area">Any comments or suggestions?</label><br />
+        <textarea
+          name="text-area"
+          id="text-area"
+          cols="30"
+          rows="5"
+          placeholder="Enter your comment here..."
+        ></textarea
+        ><br />
+        <button type="submit" id="submit">Submit</button>
+        <br>
+      </form>
+      <br><br>
+    </div>
+  </body>
+</html>
